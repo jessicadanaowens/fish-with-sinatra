@@ -1,0 +1,9 @@
+<h1>Fish Homepage</h1>
+<img src="http://bajafishing.net/wp-content/uploads/2012/04/fish-species.jpg" alt="Many Fish"/>
+
+
+<ul>
+<% fish_hash.each_with_index do |name_hash, index| %>
+  <li> <a href="/<%= index %>"> <%= name_hash[:name] %></a> </li>
+  <% end %>
+</ul>
